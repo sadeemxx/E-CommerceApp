@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/productIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fds4856"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/progressCV"
+        android:layout_width="82dp"
+        android:layout_height="28dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        android:layout_marginStart="20dp"
+        app:cardBackgroundColor="@color/white1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/progressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/productImageCV"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white1"
+        app:layout_constraintTop_toBottomOf="@id/productIdTV"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/productImageIV"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/image_placeholder"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/productTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TitleProduct"
+        android:fontFamily="@font/playfair_display_bold"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintTop_toTopOf="@id/productImageCV"
+        app:layout_constraintStart_toEndOf="@id/productImageCV"/>
+
+    <TextView
+        android:id="@+id/productPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 4566"
+        android:textColor="@color/black1"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/productTitleTV"
+        app:layout_constraintTop_toBottomOf="@id/productTitleTV"/>
+
+    <TextView
+        android:id="@+id/productSizeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size:"
+        android:textColor="@color/black1"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/productPriceTV"
+        app:layout_constraintTop_toBottomOf="@id/productTitleTV"/>
+
+    <TextView
+        android:id="@+id/productSizeValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/productSizeTV"
+        app:layout_constraintTop_toBottomOf="@id/productTitleTV"/>
+
+    <TextView
+        android:id="@+id/totalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:fontFamily="@font/playfair_display_bold"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@id/productImageCV"
+        app:layout_constraintStart_toStartOf="@id/productImageCV"/>
+
+    <TextView
+        android:id="@+id/totalValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4564"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/totalTV"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/detailCV"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="@color/white1"
+        app:layout_constraintTop_toBottomOf="@id/totalTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ratingCV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/detailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ratingCV"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="@color/black1"
+        app:layout_constraintTop_toBottomOf="@id/totalTV"
+        app:layout_constraintStart_toEndOf="@+id/detailCV"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/ratingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/detailCV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

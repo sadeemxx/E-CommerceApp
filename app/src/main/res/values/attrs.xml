@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundedCornerImageView">
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>
+
+    <array name="initial_slider_values">
+        <item>200.0</item>
+        <item>700.0</item>
+    </array>
+
+    <declare-styleable name="TintableImageView">
+        <attr name="tintColorStateList" format="reference|color" />
+    </declare-styleable>
+
+</resources>

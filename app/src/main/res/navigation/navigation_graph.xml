@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@+id/navigationHome">
+
+    <fragment android:id="@+id/navigationHome"
+        android:name="com.example.e_commerceapp.ui.home.fragements.HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment android:id="@+id/navigationCategories"
+        android:name="com.example.e_commerceapp.ui.home.fragements.CategoriesFragment"
+        tools:layout="@layout/fragment_categories"/>
+    <fragment
+        android:id="@+id/navigationCart"
+        android:name="com.example.e_commerceapp.ui.home.fragements.MyCartFragment"
+        android:label="fragment_my_cart"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/navigationFavouriteItem"
+        android:name="com.example.e_commerceapp.ui.home.fragements.FavouriteItemFragment"
+        android:label="fragment_favourite_item"
+        tools:layout="@layout/fragment_favourite_item" />
+    <fragment
+        android:id="@+id/navigationMyOrders"
+        android:name="com.example.e_commerceapp.ui.home.fragements.MyOrdersFragment"
+        android:label="fragment_my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+
+
+</navigation>
